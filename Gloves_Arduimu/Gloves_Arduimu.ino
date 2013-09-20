@@ -1,5 +1,5 @@
-// TIM FLEX SENSOR IDEA IS on line 664.
-
+// ITP Camp Gloves project
+// Sketch based on ArduIMU's
 
 
 
@@ -263,7 +263,7 @@ volatile uint8_t analog_count[8];
 //*****************************************************************************************
 void setup()
 { 
-  Serial.begin(38400, 128, 16);
+  Serial.begin(115200, 128, 16);
   pinMode(SERIAL_MUX_PIN,OUTPUT); //Serial Mux
   if (GPS_CONNECTION == 0){
     digitalWrite(SERIAL_MUX_PIN,HIGH); //Serial Mux
